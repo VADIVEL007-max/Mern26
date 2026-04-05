@@ -8,25 +8,49 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-      
+    <header >
+        <nav class=" ">
+            <div class="max-w-[100%] bg-[#0c2436] fixed  w-full z-50 ">
+                <div class="w-[90%] mx-auto grid grid-cols-1  lg:grid-cols-2 items-center py-5 " >
+                    <div class="  flex justify-between">
+                         <img src="https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/food-munch-img.png" alt="" class="w-[70px] h-[70px]">
+                    <div class="flex gap-3">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu  lg:hidden "id="menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x hidden" id="cross"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </div>
+                </div>
+                <div class=" hidden lg:block  " id="naveitem">
+                    <ol class="flex flex-col items-end lg:flex-row lg:justify-end gap-8 lg:gap-20 text-white ">
+                        <a href="#why" class=" hover:text-blue-600 font-bold">Why choose us</a>
+                        <a href="#Explore" class=" hover:text-blue-600 font-bold"> Explore</a>
+                        <a href="#Delivery" class=" hover:text-blue-600 font-bold">Delivery & Payment</a>
+                        <a href="#us" class=" hover:text-blue-600 font-bold">Follow Us</a>
+                     </ol>
+                </div>
+
+            </div>
+           
+        </nav>     
+    
+      <main>
         <!-- hero  head start -->
         <div class="max-w-[100%] bg-[url(https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/Copilot_20260314_173544.png)] h-screen bg-cover ">
             <div class=" space-y-4 w-[90%] mx-auto md:w-[75%] flex flex-col justify-center items-center gap-3 h-screen">
                 <h1 class="text-[46px]  leading- [54px] font-[500] text-white">Delicious Food Anytime</h1>
                 <p class="text-white font-bold">Eat Smart & Healthy</p>
                 <div class="flex justify-center gap-3">
-                     <button class=  "bg-yellow-600  text-white py-2 px-5 rounded-lg   font-bold hover:text-blue-600">View  Menu</button>
+                    <button class=  "bg-yellow-600  text-white py-2 px-5 rounded-lg   font-bold hover:text-blue-600">View  Menu</button>
                     <button class=" bg-transparent border text-white border-yellow-600 py-2 px-5 rounded-lg hover:text-blue-600 font-bold">View  Order</button>
                 </div>
                 <!-- hero head end -->
 
             </div>
         </div>
+        </main>
 
     </header>
 <!-- why choose us start -->
-    <section class="p-3">
+    <section class="p-3 " id="why">
         <div class="max-w-[100%]">
             <div class=" gap-y-3 p-5  w-[90%] mx-auto md:w-[75%]  grid">
                 <h1 class="text-[28px] font-[700] text-[#183b56]"> why choose us ?</h1>
@@ -34,7 +58,7 @@
 
             </div>
 
-            <div class="space-x-7  p-5 w-[90%] mx-auto md:w-[75%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class=" space-x-7 space-y-5 p-5 w-[90%] mx-auto md:w-[75%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:space-y">
              <div class="flex flex-col  justify-center items-center  gap-3 border p-5 rounded-lg">
                     <img src=" https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/food-serve.png" alt=" card 1 image">
                     <h2 class="text-[#323f4b] text-[28px]">Food Service</h2>
@@ -59,7 +83,7 @@
     <!-- why choose us end -->
 
      <!-- Explore menu start -->
-    <section class="p-10">
+    <section class="p-10"id="Explore" >
          <div class=" gap-y-2 p-5  w-[90%] mx-auto md:w-[75%]  grid">
                 <h1 class="text-[28px] font-[700] text-[#183b56]">Explore Menu</h1>
                 
@@ -121,7 +145,7 @@
     <!--Explore menu end -->
 
     <!-- Fresh, Healthy, Organic, Delicious Fruits start -->
-     <section  class="py-10">
+     <section  class="py-10"  id="menu">
         <div class="max-w-[100%]">
             <div class="w-[90%] mx-auto md:w-[75%] grid grid-cols-1 md:grid-cols-2  p-5 border rounded-lg">
                 <div class="flex justify-center">
@@ -141,7 +165,7 @@
       <!-- Fresh, Healthy, Organic, Delicious Fruits start -->
 
        <!-- Delivery and Payment start -->
-        <section  class="py-10">
+        <section  class="py-10" id="Delivery">
         <div class="max-w-[100%] ">
             <div class="w-[90%] mx-auto md:w-[75%] grid grid-cols-1 md:grid-cols-2 border rounded-lg">
             
@@ -170,7 +194,7 @@
         <!-- Delivery and Payment end -->
 
          <!-- gift start -->
-          <section  class="py-10">
+          <section  class="py-10 " id="gift">
         <div class="max-w-[100%]  bg-yellow-600 border rounded-lg">
             <div class="w-[90%] mx-auto md:w-[75%] grid grid-cols-1 md:grid-cols-2 ">
                 
@@ -192,7 +216,7 @@
            <!-- gift end -->
 
             <!-- Follow Us start-->
-            <section class="py-10">
+            <section class="py-10" id="us"   >
                 <div class=" max-w-[100%]">
                     <div class="w-[90%] mx-auto md:w-[75%] space-y-6">
                         <div class="text-center">
@@ -229,7 +253,7 @@
               <!-- Follow Us end-->
 
         <!-- footer section start -->
-         <footer class="py-10 bg-[#0c2437]">
+         <footer class="py-10 bg-[#0c2437]" id="footer"  >
          <div class="max-w-[100%]">
             <div class="w-[90%] md:w-[75%] mx-auto flex flex-col justify-center items-center bg gap-3">
                 <img src="https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/food-munch-img.png" alt="" class="w-[150px] h-[150px]">
@@ -240,6 +264,25 @@
          </div>
          </footer>
       <!-- footer section start -->
+       <script>
+         let menu =document.getElementById("menu")
+        let cross=document.getElementById("cross")
+        let naveitem=document.getElementById("naveitem")
+
+        menu.addEventListener("click",()=>{
+            naveitem.classList.remove("hidden")
+            menu.classList.add("hidden")
+            cross.classList.remove("hidden")
+
+
+        })
+        cross.addEventListener("click",()=>{
+            naveitem.classList.add("hidden")
+            menu.classList.remove("hidden")
+            cross.classList.add("hidden")
+
+        })
+       </script>
 
 
     
