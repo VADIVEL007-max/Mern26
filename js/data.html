@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     Name :  <input id="text" placeholder="enter your name">
+     <button id="btn" > login </button>
+     <h1 id="put"></h1>
+     <script>
+        // let text=document.getElementById("text")
+        let btn=document.getElementById("btn")
+        let text=document.getElementById("text")
+        let put=document.getElementById("put")
+        btn.addEventListener("click",()=>{
+            let a=text.value;
+             put.innerText="Welcome Back "+a;
+
+
+        })
+        
+        
+     </script>
+
+</body>
+</html>

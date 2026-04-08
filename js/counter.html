@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen flex flex-col justify-center items-center gap-6">
+    <div>
+        <p id="count">0</p>
+    </div>
+    <div class="flex gap-6">
+        <button class="bg bg-green-600 px-5 py-2 rounded-full border " id="add">+</button>
+        <button class="bg bg-red-600 px-5 py-2 rounded-full border " id="sub">_</button>
+        <button class="bg bg-teal-500 px-5 py-2 rounded-full border "id="reset" >Reset</button>
+    </div>
+    </div>
+    <script>
+        let count=document.getElementById("count")
+        let add=document.getElementById("add")
+        let sub=document.getElementById("sub")
+        let reset=document.getElementById("reset")
+
+        var value=0
+        add.addEventListener("click",() => {
+        value++
+        count.innerText=value
+        color()
+        } )
+
+        sub.addEventListener("click",() => {
+        value--
+        count.innerText=value
+        color()
+        } )
+        reset.addEventListener("click",() => {
+        value=0
+        count.innerText=value
+        color()
+        } )
+        
+        function  color(){
+            if (value>0){
+                count.style.color="green"
+            }
+            else if(value<0){
+                count.style.color="red"
+            }
+            else{
+                count.style.color="blue"
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">hello sir</p>
+    <button id="btn">click me</button>
+    <script>
+        let p=document.getElementById("para")
+        let b=document.getElementById("btn")
+        // b.onclick =()=>{
+        //     p.innerHTML= "<b >Welcome Back <i>Sir</i> !!</b>"
+        // }
+        b.addEventListener("click",()=>{
+            p.innerHTML= "<b >Welcome Back <i>Sir</i> !!</b>"
+
+        })
+    </script>
+    
+</body>
+</html>

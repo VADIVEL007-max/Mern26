@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="max-w-[100%]">
+        <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center py-5 " >
+            <div class=" bg-cyan-400 flex justify-between">
+                <img src="https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/food-munch-img.png" alt="" class="w-[40px] h-[40px]">
+                <div class="flex gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu  lg:hidden "id="menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x hidden" id="cross"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </div>
+            </div>
+            <div class=" bg-gray-400  hidden lg:block " id="naveitem">
+                <ol class="flex flex-col items-center lg:flex-row lg:justify-end gap-8 lg:gap-20">
+
+                    <a href="./cat.html " >about</a>
+                    <a href="./counter.html"> projects</a>
+                    <a href="./login.html"> live</a>
+                    <a href="./dom.html">help</a>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <Script>
+        let menu =document.getElementById("menu")
+        let cross=document.getElementById("cross")
+        let naveitem=document.getElementById("naveitem")
+
+        menu.addEventListener("click",()=>{
+            naveitem.classList.remove("hidden")
+            menu.classList.add("hidden")
+            cross.classList.remove("hidden")
+
+
+        })
+        cross.addEventListener("click",()=>{
+            naveitem.classList.add("hidden")
+            menu.classList.remove("hidden")
+            cross.classList.add("hidden")
+
+        })
+
+       
+
+    
+    </Script>
+    
+</body>
+</html>   

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="" id="main">
+        <div class="flex  text-5xl justify-center m-3 font-bold"> <h2 id="title"class="text-white">Cat project </h2></div>
+        <div class="flex justify-center">
+            <img src="https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/cat%20project/bulb-go-on-img.png" alt="" class="w-[200px] h-[250px]" id="img1">
+        </div>
+        <div class="flex justify-center">
+            <img src="https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/cat%20project/cat-img.png" alt=""class="w-[200px] h-[250px]" id="img2">
+        </div>
+        <div class="flex justify-center gap-x-44 m-5 ">
+            <button class="bg-lime-300 px-5 py-2 rounded-2xl hover:bg-lime-800 font-bold hover:text-white" id="btn-on">on </button>
+            <button class="bg-red-300 px-5 py-2 rounded-2xl hover:bg-red-800 font-bold  hover:text-white" id="btn-off">off</button>
+            <button class=" bg-white px-5 py-2 rounded-2xl  hover:bg-black font-bold border hover:text-white" id="dark">Dark Mode</button>
+        </div>
+    </div>
+    <script>
+        let img=document.getElementById("img1")
+        let cat=document.getElementById("img2")
+        let btn1=document.getElementById("btn-on")
+        let btn2=document.getElementById("btn-off")
+        let head = document.getElementById("dark")
+        
+        
+
+        btn1.addEventListener("click", () => {
+        img.src = "https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/cat%20project/bulb-go-on-img.png";
+        cat.src = "https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/cat%20project/cat-img.png";
+        })
+        btn2.addEventListener("click", () => {
+            img.src = "https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/cat%20project/bulb-go-off-img.png";
+            cat.src = "https://ik.imagekit.io/yz7lyfxnj/MERN%20Stack/cat%20project/cat-eyes-img.png";
+        })
+        dark.addEventListener("click", () => {
+
+            document.body.classList.toggle("bg-black");
+            document.body.classList.toggle("bg-white");
+            dark.textContent = document.body.classList.contains("bg-black")
+            ? " Light Mode"
+            : "Dark Mode";  
+        });
+
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen flex flex-col justify-center items-center">
+        <div class="space-y-4 p-7 border rounded-lg bg-light bg-cyan-400">
+             <h2 class="flex justify-center text-white font-semibold text-4xl">Login page</h2>
+            <label class="text-gray-800 font-semibold text-2xl" >Name:</label>
+            <input type="text " placeholder=" Enter your Name"><br>
+            <label class="text-gray-800 font-semibold text-2xl">Roll no:</label>
+            <input type="text" placeholder="Eneter your Roll NO"><br>
+            <button class="bg-yellow-900 rounded-full px-5 py-1 flex  hover:bg-yellow-600 font-bold text-white" id="btn">login</button>
+            <p id="para"class="font-bold"></p>
+
+
+            
+         </div>
+        <Script>
+            let b=document.getElementById("btn")
+            let p=document.getElementById("para")
+            b.addEventListener("click",()=>{
+                 p.innerHTML="login sucessfully !!!"
+                 color()
+
+            })
+            function color(){
+                para.style.color="green"
+            
+            }
+
+        </Script>
+
+    </div>
+
+    
+</body>
+</html>
